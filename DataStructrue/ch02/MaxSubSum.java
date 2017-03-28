@@ -1,4 +1,4 @@
-//P26×î´ó×ÓĞòÁĞºÍÎÊÌâ
+//P26æœ€å¤§å­åºåˆ—å’Œé—®é¢˜
 public class MaxSubSum {
     private MaxSubSum() {}
     
