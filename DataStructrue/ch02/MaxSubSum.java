@@ -2,7 +2,7 @@
 public class MaxSubSum {
     private MaxSubSum() {}
     
-    public static maxSubSum1(int[] a) {
+    public static int maxSubSum1(int[] a) {
         int maxSum = 0;
         int sum = 0;
         for (int i = 0; i < a.length; i++) {
