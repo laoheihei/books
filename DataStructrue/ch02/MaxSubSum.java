@@ -1,4 +1,4 @@
-//P26æœ€å¤§å­åºåˆ—å’Œé—®é¢˜
+//P26×î´ó×ÓĞòÁĞºÍÎÊÌâ
 public class MaxSubSum {
     
     private MaxSubSum() {}
@@ -23,17 +23,17 @@ public class MaxSubSum {
     /*-----------------O(NlogN)-------------------*/
     public static int maxSubSum2(int[] a) {
         
-        return maxSubMax2(a, 0, a.length - 1);
+        return maxSubSum2(a, 0, a.length - 1);
     }
-    //æ±‚[lo, hi]çš„æœ€å¤§å­åºåˆ—
+    //Çó[lo, hi]µÄ×î´ó×ÓĞòÁĞ
     private static int maxSubSum2(int[] a, int lo, int hi) {
         
         if (hi < lo + 1)
             return (0 < a[lo]) ? a[lo] : 0;
         
         int mi = (lo + hi) / 2;        
-        leftMax = maxSubSum2(a, lo, mi);
-        rightMax = maxSubSum2(a, mi + 1, hi);
+        int leftMax = maxSubSum2(a, lo, mi);
+        int rightMax = maxSubSum2(a, mi + 1, hi);
         
         int maxLeftBranch = 0,
             sumLeftBranch = 0,
@@ -75,6 +75,13 @@ public class MaxSubSum {
         }
         
         return maxSum;
+    }
+    
+    public static void main(String[] args) {
+        int[] a = {4, -3, 5, -2, -1, 2, 6, -2};
+        System.out.println(maxSubSum(a));
+        System.out.println(maxSubSum1(a));
+        System.out.println(maxSubSum2(a));
     }
 }
 
