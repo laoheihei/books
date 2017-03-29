@@ -116,6 +116,9 @@ public class MyArrayList<T> {
         public void remove() {
             if (modCount != expectedModCount)
                 throw new java.util.ConcurrentModificationException();
+            if (!okToRemove)
+                throw new IllegalStateException();
+            
             MyArrayList.this.remove(--current);
             expectedModCount++;
             okToRemove = false;
