@@ -2,4 +2,5 @@
        MyArrayList.class
        MyArrayList$ArrayListIterator.class
        MyArrayList$1.class
-   最后MyArrayList$1.class是由什么编译出来的？
+   MyArrayList$1.class是由什么编译出来的？
+   MyLinkedList$1.class是由什么编译出来的？
