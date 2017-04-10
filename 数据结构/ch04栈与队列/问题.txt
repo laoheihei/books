@@ -1,0 +1,7 @@
+问题:
+1、Integer与int在表达式中共同出现时，会将Integer自动转为int进行运算。
+   null不能被赋给基本变量类型，任何含有null值的包装类在java自动拆箱生成基本数据类型时都会抛一个空指针异常。
+    Integer i1 = null;
+    //下句抛出NullPointerException异常.
+    int a = i1 + 2;
+2、有关null的9件事：http://www.importnew.com/14229.html
